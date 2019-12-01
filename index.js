@@ -18,5 +18,5 @@ function deepestChild()
   let traverseTest = divGrandNodes
   while (traverseTest.children){
     traverseTest = traverseTest.children;
-  } 
+  }
 }

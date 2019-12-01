@@ -19,6 +19,6 @@ function deepestChild()
   while (traverseTest[0].children){
       traverseTest = traverseTest.children;
     }
-    traverseTest[0].innerHTML  
-  }  
+    traverseTest[0].innerHTML
+  }
 }

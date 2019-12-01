@@ -18,5 +18,5 @@ function deepestChild()
   while (document.querySelectorAll(deepCriteria)[0].children.length>0){
       deepCriteria = `${deepCriteria} ${document.querySelectorAll(deepCriteria)[0].localName}`;
     }
-    return document.querySelectorAll(deepCriteria);
+    return document.querySelector(deepCriteria);
   }

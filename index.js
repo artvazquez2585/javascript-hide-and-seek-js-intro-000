@@ -16,8 +16,8 @@ function deepestChild()
   let initialDeepCriteria = 'div#grand-node' //make this variable a parameter to generalize function
   let deepCriteria = initialDeepCriteria;
   while (document.querySelectorAll(deepCriteria)[0].children.length>0){
-      traverseTest = traverseTest.children;
+      deepCriteria = `${deepCriteria} ${document.querySelectorAll(deepCriteria)[0].localName}`;
     }
-    traverseTest[0].innerHTML
+    return document.querySelectorAll(deepCriteria);
   }
 }

@@ -18,6 +18,6 @@ function deepestChild()
   let traverseTest = document.querySelectorAll(deepCriteria);
   while (traverseTest[i].children){
       traverseTest = traverseTest.children;
-    }  
-  }  
+    }
+  }
 }

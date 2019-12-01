@@ -14,6 +14,8 @@ for (let i=0;i<rankListsElements.length;i++){
 function deepestChild()
 {
   let initialDeepCriteria = 'div#grand-node' //make this variable a parameter to generalize function
+  let deepCriteria = initialDeepCriteria;
+
   //const divGrandNodes = document.querySelectorAll(deepCriteria)
   let traverseTest = document.querySelectorAll(deepCriteria);
   while (traverseTest[0].children){
